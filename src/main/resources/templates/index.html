@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns:th="http://www.thymeleaf.org"><head>
+
+    <title>Lumière Café</title>
+
+    <link rel="stylesheet"
+        th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="tag">
+            EST. 2014 • MISSION DISTRICT
+        </span>
+
+        <h1>
+            Slow coffee,<br>
+            <span>loud flavor.</span>
+        </h1>
+
+        <p>
+            We roast in small batches,
+            pull every shot by hand,
+            and bake the pastries before
+            the sun comes up.
+        </p>
+
+        <div class="buttons">
+            <button>
+                See the menu
+            </button>
+
+            <button class="secondary">
+                Plan your visit
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div>
+        <h2>12</h2>
+        <p>Origins on Rotation</p>
+    </div>
+
+    <div>
+        <h2>4.9</h2>
+        <p>Google Rating</p>
+    </div>
+
+    <div>
+        <h2>7am</h2>
+        <p>Doors Open Daily</p>
+    </div>
+
+    <div>
+        <h2>100%</h2>
+        <p>Direct Trade Beans</p>
+    </div>
+
+</section>
+
+<section id="story" class="story">
+
+    <div class="story-image">
+        <img th:src="@{/images/interior-cafe.jpg}" alt="Cafe Interior">
+    </div>
+
+    <div class="story-content">
+
+        <span class="story-tag">OUR STORY</span>
+
+        <h2>
+            A room built for
+            the <span>second cup.</span>
+        </h2>
+
+        <p>
+            Lumière started as a tiny roaster tucked behind a flower shop.
+            What began with a single espresso machine grew into a gathering
+            place for coffee lovers, creatives, and neighbors.
+        </p>
+
+        <p>
+            Every bean is sourced responsibly, every pastry is baked fresh,
+            and every cup is crafted with care.
+        </p>
+
+        <div class="features">
+
+            <div class="card">
+                <h3>☕ Direct Trade</h3>
+                <p>Ethically sourced beans from trusted farms.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔥 Fresh Roast</h3>
+                <p>Small-batch roasted for maximum flavor.</p>
+            </div>
+
+            <div class="card">
+                <h3>🥐 House Bakery</h3>
+                <p>Made fresh every morning before sunrise.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="menu" class="menu-section">
+
+    <h1>
+        Our <span>Menu</span>
+    </h1>
+
+    <div class="menu-grid">
+
+        <div class="drink">
+            <h3>Espresso <span>$4</span></h3>
+            <p>Rich, bold and perfectly extracted.</p>
+        </div>
+
+        <div class="drink">
+            <h3>Cappuccino <span>$5</span></h3>
+            <p>Espresso with silky steamed milk.</p>
+        </div>
+
+        <div class="drink">
+            <h3>Latte <span>$6</span></h3>
+            <p>Smooth espresso with creamy milk.</p>
+        </div>
+
+        <div class="drink">
+            <h3>Mocha <span>$6.5</span></h3>
+            <p>Chocolate, espresso and steamed milk.</p>
+        </div>
+
+        <div class="drink">
+            <h3>Croissant <span>$4</span></h3>
+            <p>Freshly baked every morning.</p>
+        </div>
+
+        <div class="drink">
+            <h3>Blueberry Muffin <span>$4.5</span></h3>
+            <p>House-made with fresh blueberries.</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="pastries" class="pastry-section">
+
+    <div class="pastry-heading">
+
+        <h4>FRESH FROM THE OVEN</h4>
+
+        <h1>
+            House <span>Pastries</span>
+        </h1>
+
+        <p>
+            Baked every morning using traditional recipes
+            and the finest ingredients.
+        </p>
+
+    </div>
+
+    <div class="pastry-grid">
+
+        <div class="pastry-card">
+            <img th:src="@{/images/croissant.jpg}" alt="Croissant">
+            <h3>Butter Croissant</h3>
+            <p>Flaky, buttery and freshly baked.</p>
+            <span>$4.00</span>
+        </div>
+
+        <div class="pastry-card">
+            <img th:src="@{/images/muffin.jpg}" alt="Muffin">
+            <h3>Blueberry Muffin</h3>
+            <p>Loaded with fresh blueberries.</p>
+            <span>$4.50</span>
+        </div>
+
+        <div class="pastry-card">
+            <img th:src="@{/images/danish.jpg}" alt="Danish">
+            <h3>Berry Danish</h3>
+            <p>Sweet pastry topped with berries.</p>
+            <span>$5.00</span>
+        </div>
+
+        <div class="pastry-card">
+            <img th:src="@{/images/cinnamon-roll.jpg}" alt="Cinnamon Roll">
+            <h3>Cinnamon Roll</h3>
+            <p>Soft, warm and glazed to perfection.</p>
+            <span>$5.50</span>
+        </div>
+
+    </div>
+
+</section>
+<section>
+    <div class="footer-heading">
+    <span>COME SAY HI</span>
+    <h1>We're on the <em>corner.</em></h1>
+    </div>
+    <footer th:replace="fragments/footer :: footer"></footer>
+</section>
+</body>
+</html>

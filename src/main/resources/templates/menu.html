@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Menu</title>
+
+    <link rel="stylesheet"
+        th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<section class="menu-section">
+
+    <h5>THE POUR LIST</h5>
+
+    <h1>
+        Six drinks.
+        <span>No filler.</span>
+    </h1>
+
+    <div class="menu-grid">
+
+        <div class="drink">
+            <h3>Single Origin Espresso</h3>
+            <span>$4.50</span>
+            <p>Jasmine, bergamot, honey</p>
+        </div>
+
+        <div class="drink">
+            <h3>Brown Butter Latte</h3>
+            <span>$6.20</span>
+            <p>Toasted brown butter</p>
+        </div>
+
+        <div class="drink">
+            <h3>Iced Cortado</h3>
+            <span>$4.80</span>
+            <p>Dark chocolate, plum</p>
+        </div>
+
+        <div class="drink">
+            <h3>Cardamom Mocha</h3>
+            <span>$5.90</span>
+            <p>Valrhona chocolate</p>
+        </div>
+
+        <div class="drink">
+            <h3>Cold Brew Tonic</h3>
+            <span>$5.50</span>
+            <p>Citrus tonic</p>
+        </div>
+
+        <div class="drink">
+            <h3>Matcha Affogato</h3>
+            <span>$7.00</span>
+            <p>Gelato & Matcha</p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
